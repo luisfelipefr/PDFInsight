@@ -1,6 +1,7 @@
 import asyncio
 import hashlib
 import os
+import sys
 import time
 import urllib.request
 import logging
@@ -16,10 +17,13 @@ logging.basicConfig(
 time_str = time.strftime("%Y-%m-%d_%H-%M-%S")
 
 
-print("Escolha a opção:")
-print("1 - Puxar de uma URL e gerar PDF")
-print("2 - Verificar alteração apenas de um PDFs locais")
-option = input("Digite 1 ou 2: ")
+if len(sys.argv) < 2 or sys.argv[1] not in ["1", "2"]:
+  print("Uso: python generate_pdf.py [1|2]")
+  print("1 - Puxar de uma URL e gerar PDF")
+  print("2 - Verificar alteração apenas nos nomes dos PDFs locais")
+  exit(1)
+
+option = sys.argv[1]
 
 
 URL = "https://curriculo.luigifr.com"
