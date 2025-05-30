@@ -93,6 +93,16 @@ Para gerar o PDF automaticamente a cada 5 minutos **apenas se houver mudança no
    ```
 
 ---
+## Escolher analisar PDFs locais por nomes ou gerar novo PDF a partir de URL
+
+No arquivo `generate_pdf.py` escolha entre a opção 1 ou 2 via CMD ou ajuste para sempre receber o valor entre 1 ou 2
+
+Execute o script informando a opção desejada:
+
+```bash
+python generate_pdf.py 1  # Gera PDF a partir da URL
+python generate_pdf.py 2  # Analisa alterações nos nomes dos PDFs locais
+```
 
 ## 🧪 Teste Manual
 
