@@ -1,4 +1,4 @@
-# 📄 Documentação: Gerador de PDF do Currículo
+# 📄 Documentação: PDFInsight
 
 Esta ferramenta automatiza a geração de um PDF a partir de uma página web usando **Pyppeteer** e **Chromium**. Abaixo estão as instruções para instalação, configuração e automação com `crontab`.
 
